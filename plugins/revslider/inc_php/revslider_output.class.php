@@ -2025,13 +2025,13 @@
 					
 					if($enable_logs == 'on'){
 						$urlIncludeJS = UniteBaseClassRev::$url_plugin."rs-plugin/js/jquery.themepunch.enablelog.js?rev=". GlobalsRevSlider::SLIDER_REVISION;
-						$htmlBeforeSlider .= "<script type='text/javascript' src='$urlIncludeJS'></script>";
+						$htmlBeforeSlider .= "<script async type='text/javascript' src='$urlIncludeJS'></script>";
 					}
 
 					$urlIncludeJS = UniteBaseClassRev::$url_plugin."rs-plugin/js/jquery.themepunch.tools.min.js?rev=". GlobalsRevSlider::SLIDER_REVISION;
-					$htmlBeforeSlider .= "<script type='text/javascript' src='$urlIncludeJS'></script>";
+					$htmlBeforeSlider .= "<script async type='text/javascript' src='$urlIncludeJS'></script>";
 					$urlIncludeJS = UniteBaseClassRev::$url_plugin."rs-plugin/js/jquery.themepunch.revolution.min.js?rev=". GlobalsRevSlider::SLIDER_REVISION;
-					$htmlBeforeSlider .= "<script type='text/javascript' src='$urlIncludeJS'></script>";
+					$htmlBeforeSlider .= "<script async type='text/javascript' src='$urlIncludeJS'></script>";
 				}
 
 				//the initial id can be alias
