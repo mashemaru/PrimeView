@@ -146,7 +146,7 @@ if (!function_exists('gourl_spelling_load') && !function_exists('gourl_spelling_
 				echo '<script type="text/javascript" charset="UTF-8">spl_path="'.trim(site_url(),' /').'";spl_txt1="'.esc_html($this->fields["form_message1"]).'";spl_txt2="'.esc_html($this->fields["form_message2"]).'"</script>';
 				echo '<script async src="'.plugins_url('/gourl_spelling.js', __FILE__).'" type="text/javascript"></script>
 
-				<script>loadCSS("' .plugins_url('/gourl_spelling.css', __FILE__). '",0,all");</script><noscript><link rel="stylesheet" type="text/css" href="'.plugins_url('/gourl_spelling'.($this->form_style=='noshadow'?'2':'').'.css', __FILE__).'" media="all" /></noscript>';
+				<script>loadCSS("' .plugins_url('/gourl_spelling.css', __FILE__). '",0,"all");</script><noscript><link rel="stylesheet" type="text/css" href="'.plugins_url('/gourl_spelling'.($this->form_style=='noshadow'?'2':'').'.css', __FILE__).'" media="all" /></noscript>';
 				if ($this->fields["form_width"] != "470px") echo "<style>#splwin #splwindow {width:".esc_html($this->fields["form_width"])."}</style>";
 				
 				return true;
